@@ -16,7 +16,7 @@ public class SerieController {
     private SerieService serieService;
 
     @GetMapping("")
-    public List<SerieDTO> getPhrase() {
+    public SerieDTO getPhrase() {
         return serieService.getPhrase();
     }
 }
