@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface SerieRepository extends JpaRepository<Serie, Long> {
-    @Query("SELECT f FROM Frase f order by function('RANDOM') LIMIT 1")
+    @Query("SELECT s FROM Serie s order by function('RANDOM') LIMIT 1")
     Serie getPhraseFromDatabase();
 
 }
